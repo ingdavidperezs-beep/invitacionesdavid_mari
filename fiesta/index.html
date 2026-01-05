@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Invitación | David & María</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Playfair Display', serif;
+      background: #000;
+      min-height: 100vh;
+    }
+
+    .invitation {
+      position: relative;
+      background-image: url('WhatsApp Image 2026-01-02 at 10.58.16.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      max-width: 430px;
+      width: 100%;
+      min-height: 100vh;
+      margin: auto;
+      color: #f5e6c8;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    /* Overlay suave */
+    .invitation::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.45);
+    }
+
+    .content {
+      position: relative;
+      padding: 60px 25px;
+    }
+
+    .subtitle {
+      font-size: 0.85em;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.2em;
+      margin: 20px 0 30px;
+      color: #f7e7c6;
+    }
+
+    .date {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      font-size: 1em;
+      letter-spacing: 2px;
+    }
+
+    .day {
+      font-size: 2.2em;
+      font-weight: 600;
+    }
+
+    .time {
+      margin: 15px 0 30px;
+      font-size: 1.2em;
+    }
+
+    .info {
+      font-size: 0.95em;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 30px;
+      font-size: 0.95em;
+      font-weight: 600;
+      background: rgba(247, 231, 198, 0.9);
+      color: #3a2d16;
+    }
+
+    .btn.secondary {
+      background: rgba(255, 255, 255, 0.85);
+    }
+
+    .rsvp {
+      margin-top: 25px;
+      font-size: 0.85em;
+    }
+
+    /* Música oculta */
+    .music {
+      display: none;
+    }
+
+    @media (max-width: 480px) {
+      .names { font-size: 2.7em; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Música de fondo (YouTube) -->
+  <iframe class="music" width="0" height="0"
+    src="https://www.youtube.com/embed/6hKp4oY8L7w?autoplay=1&loop=1&playlist=6hKp4oY8L7w"
+    frameborder="0"
+    allow="autoplay">
+  </iframe>
+
+  <div class="invitation">
+    <div class="content">
+      <div class="subtitle">NOS COMPLACE INVITARLOS A COMPARTIR</div>
+
+      <div class="names">María y David</div>
+
+      <div class="date">
+        <span>DOMINGO</span>
+        <span class="day">01</span>
+        <span>FEBRERO</span>
+      </div>
+
+      <div class="time">1:00 P.M.</div>
+
+      <div class="info">
+        HEMOS RESERVADO 2 ESPACIOS<br /><br />
+        SAN RAFAEL DE NARANJO<br />
+        RANCHO DE MACHO
+      </div>
+
+      <div class="buttons">
+        <a class="btn secondary" href="https://maps.app.goo.gl/GDYBxPArfRpJnkho8" target="_blank">📍 Ver ubicación</a>
+      </div>
+
+      <div class="rsvp">
+        Confirmar antes del 20 de enero<br />
+        8769-9267 | 6167-9408
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
